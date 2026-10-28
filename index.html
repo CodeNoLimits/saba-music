@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Saba Music · סבא מיוזיק</title>
+<meta name="description" content="Saba Music — les mix Na Nach de DJ NaNaH Tselahya. נ נח נחמ נחמן מאומן">
+<meta property="og:title" content="Saba Music · סבא מיוזיק">
+<meta property="og:description" content="נ נח נחמ נחמן מאומן — DJ NaNaH Tselahya">
+<meta property="og:image" content="https://codenolimits.github.io/saba-music/img/saba.jpg">
+<meta name="theme-color" content="#07060b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700;900&family=Rubik:wght@400;500;700&family=Rubik+Glitch&family=Monoton&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07060b;--ink:#f4ead6;--muted:#a99f8c;--gold:#e3b04b;--gold2:#ffd98a;--turq:#2fd6c3;--violet:#9b5cff;--line:rgba(227,176,75,.22);--card:rgba(255,255,255,.035)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Rubik",system-ui,sans-serif;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+.bar{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;background:linear-gradient(var(--bg),rgba(7,6,11,.82));backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.mark{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font:700 13px "Rubik";letter-spacing:.04em;color:#120d05;background:conic-gradient(from 200deg,var(--gold),var(--turq),var(--violet),var(--gold));box-shadow:0 0 18px rgba(227,176,75,.35)}
+.brand b{font-weight:700;letter-spacing:.14em;font-size:13px;text-transform:uppercase}
+.lang{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:2px;padding:8px 14px;font:500 13px "Rubik";letter-spacing:.12em;cursor:pointer;min-height:40px}
+.lang:hover,.lang:focus-visible{border-color:var(--gold);outline:none}
+.hero{position:relative;min-height:88vh;display:grid;align-items:center;padding:56px 0 72px;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:url(img/kotel.jpg) center/cover no-repeat;opacity:.18;filter:saturate(.6)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(60% 50% at 50% 40%,rgba(227,176,75,.20),transparent 70%),linear-gradient(transparent 55%,var(--bg))}
+.grid{display:grid;grid-template-columns:1fr;gap:36px;align-items:center}
+@media(min-width:860px){.grid{grid-template-columns:1.1fr .9fr}}
+.eyebrow{font:500 12px "Rubik";letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+h1{font:900 clamp(44px,9vw,96px)/1.05 "Frank Ruhl Libre",serif;margin:14px 0 10px}
+.mantra{font:400 clamp(30px,6.4vw,58px)/1.2 "Rubik Glitch",sans-serif;margin:22px 0 6px;background:linear-gradient(90deg,var(--gold2),#ff7ad9,var(--turq),var(--gold2));background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:flow 9s linear infinite}
+.mantra-lat{font:400 clamp(14px,2.6vw,20px)/1.4 "Monoton",cursive;letter-spacing:.06em;color:var(--turq)}
+@keyframes flow{to{background-position:300% 0}}
+@media(prefers-reduced-motion:reduce){.mantra{animation:none}}
+.lead{max-width:34em;color:#d9cfbb;margin-top:22px;font-size:17px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;border:1px solid var(--gold);text-decoration:none;font:500 14px "Rubik";letter-spacing:.14em;text-transform:uppercase;transition:background .3s,color .3s}
+.btn.solid{background:var(--gold);color:#140e04}
+.btn:hover,.btn:focus-visible{background:var(--gold2);color:#140e04;outline:none}
+.portrait{position:relative;justify-self:center;width:min(78vw,380px);aspect-ratio:3/4;border-radius:190px 190px 6px 6px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.6),0 0 0 8px rgba(227,176,75,.06)}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+.portrait figcaption{position:absolute;inset:auto 0 0 0;padding:14px;font-size:12px;color:var(--muted);background:linear-gradient(transparent,rgba(0,0,0,.85));text-align:center}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font:700 clamp(28px,5vw,44px)/1.1 "Frank Ruhl Libre",serif;margin-bottom:26px}
+.mixes{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:760px){.mixes{grid-template-columns:1fr 1fr}}
+.mix{background:var(--card);border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column}
+.thumb{position:relative;aspect-ratio:16/9;display:block;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.thumb:hover img{transform:scale(1.04)}
+.play{position:absolute;inset:0;display:grid;place-items:center}
+.play i{width:68px;height:68px;border-radius:50%;background:rgba(7,6,11,.7);border:1px solid var(--gold);display:grid;place-items:center}
+.play i::after{content:"";border-style:solid;border-width:11px 0 11px 18px;border-color:transparent transparent transparent var(--gold2);margin-left:4px}
+.mix .body{padding:18px 18px 22px}
+.mix h3{font:700 19px/1.35 "Rubik";margin-bottom:6px}
+.meta{color:var(--muted);font-size:14px}
+.tag{display:inline-block;margin-top:12px;padding:4px 10px;border:1px solid var(--line);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.styles{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.chip{display:flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid var(--line);font-size:13px}
+.chip i{display:flex;gap:2px}.chip i b{width:10px;height:18px;display:block}
+.quote{text-align:center;padding:84px 16px}
+.quote p{font:700 clamp(28px,5.6vw,52px)/1.5 "Frank Ruhl Libre",serif;color:var(--gold2);text-shadow:0 2px 0 #6b4a12,0 4px 0 #3d2a08,0 10px 30px rgba(0,0,0,.6)}
+.quote cite{display:block;margin-top:14px;font-style:normal;color:var(--muted);font-size:14px;letter-spacing:.08em}
+.links{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:760px){.links{grid-template-columns:1fr 1fr}}
+.link{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:22px;border:1px solid var(--line);text-decoration:none;background:var(--card);transition:border-color .3s}
+.link:hover,.link:focus-visible{border-color:var(--gold);outline:none}
+.link b{font:700 20px "Rubik"}.link small{display:block;color:var(--muted);font-size:13px}
+.arrow{font-size:22px;color:var(--gold)}
+footer{padding:40px 0 56px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;text-align:center}
+[data-fr]{display:none}
+html[lang=fr] [data-fr]{display:revert}
+html[lang=fr] [data-he]{display:none}
+</style>
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="#top" aria-label="Saba Music"><span class="mark">NN</span><b>DJ NaNaH Tselahya</b></a>
+  <button class="lang" id="lang" type="button" aria-label="Langue / שפה">FR</button>
+</header>
+<main id="top">
+  <div class="hero">
+    <div class="wrap grid">
+      <div>
+        <div class="eyebrow">Saba Music</div>
+        <h1><span data-he>סבא מיוזיק</span><span data-fr>Saba Music</span></h1>
+        <div class="mantra" lang="he" dir="rtl">נ נח נחמ נחמן מאומן</div>
+        <div class="mantra-lat" dir="ltr" lang="en">Na Nach Nachma Nachman Meuman</div>
+        <p class="lead" data-he>המיקסים של DJ NaNaH Tselahya — מוזיקה של שמחה לכבוד סבא, רבי ישראל דב אודסר.</p>
+        <p class="lead" data-fr>Les mix de DJ NaNaH Tselahya — de la musique de joie en l'honneur du Saba, Rabbi Israël Dov Odesser.</p>
+        <div class="cta">
+          <a class="btn solid" href="#mixes"><span data-he>המיקסים</span><span data-fr>Les mix</span></a>
+          <a class="btn" href="https://hafatsa-hub.vercel.app/" rel="noopener"><span data-he>אתר ההפצה</span><span data-fr>Site Hafatsa</span></a>
+        </div>
+      </div>
+      <figure class="portrait">
+        <img src="img/saba.jpg" alt="Rabbi Israël Dov Odesser (Saba), photo d'archive" width="776" height="1100">
+        <figcaption><span data-he>רבי ישראל דב אודסר · תצלום ארכיון</span><span data-fr>Rabbi Israël Dov Odesser · photo d'archive</span></figcaption>
+      </figure>
+    </div>
+  </div>
+  <section id="mixes">
+    <div class="wrap">
+      <h2><span data-he>המיקסים</span><span data-fr>Les mix</span></h2>
+      <div class="mixes">
+        <article class="mix">
+          <a class="thumb" href="https://youtu.be/j1i9k8euU4E" rel="noopener" aria-label="Hilloula Saba Mix 5787 (YouTube)">
+            <img src="img/mix-hilloula.jpg" alt="Hilloula Saba Mix 5787" width="1280" height="720" loading="lazy">
+            <span class="play"><i></i></span>
+          </a>
+          <div class="body">
+            <h3 dir="ltr">Hilloula Saba Mix 5787</h3>
+            <div class="meta">YouTube · @DJNanachTselahya</div>
+            <span class="tag"><span data-he>ביוטיוב</span><span data-fr>En ligne</span></span>
+          </div>
+        </article>
+        <article class="mix">
+          <div class="body">
+            <h3 dir="ltr">Mix 1 · Hilloula · Montée douce</h3>
+            <div class="meta" dir="ltr">51:37 · Reggae → Mizrahi → Tech House → Psy</div>
+            <span class="tag"><span data-he>בקרוב</span><span data-fr>Bientôt</span></span>
+            <div class="styles">
+              <span class="chip"><i><b style="background:#1db954"></b><b style="background:#ffd400"></b><b style="background:#e3262e"></b></i>Reggae</span>
+              <span class="chip"><i><b style="background:#9b5cff"></b><b style="background:#00f0ff"></b></i>Psytrance</span>
+              <span class="chip"><i><b style="background:#111"></b><b style="background:#ff1a1a"></b></i>Techno</span>
+              <span class="chip"><i><b style="background:#d4a017"></b><b style="background:#0b1638"></b></i>House</span>
+              <span class="chip"><i><b style="background:#e3b04b"></b><b style="background:#19c3b0"></b></i>Mizrahi</span>
+              <span class="chip"><i><b style="background:#000"></b><b style="background:#fff"></b><b style="background:#c9a227"></b></i>Drill / Rap</span>
+              <span class="chip"><i><b style="background:#ffb347"></b><b style="background:#7a4a14"></b></i>Niggoun / Rock</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <div class="quote" lang="he" dir="rtl">
+    <p>מִצְוָה גְּדוֹלָה לִהְיוֹת בְּשִׂמְחָה תָּמִיד</p>
+    <cite>ליקוטי מוהר"ן תנינא, סימן כד</cite>
+  </div>
+  <section>
+    <div class="wrap links">
+      <a class="link" href="https://hafatsa-hub.vercel.app/" rel="noopener">
+        <span><b><span data-he>אתר ההפצה</span><span data-fr>Site Hafatsa</span></b><small dir="ltr">hafatsa-hub.vercel.app</small></span><span class="arrow">↗</span>
+      </a>
+      <a class="link" href="https://www.youtube.com/@DJNanachTselahya" rel="noopener">
+        <span><b>YouTube</b><small>@DJNanachTselahya · נ נח זה מספיק!</small></span><span class="arrow">↗</span>
+      </a>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    Saba Music · DJ NaNaH Tselahya · נ נח נחמ נחמן מאומן<br>
+    Photos : Wikimedia Commons — Rabbi Israël Dov Odesser (CC0, King7072) · Western Wall at night (CC BY-SA 4.0, Rhododendrites)
+  </div>
+</footer>
+<script>
+(function(){
+  var h=document.documentElement,b=document.getElementById('lang');
+  function set(l){h.lang=l;h.dir=l==='he'?'rtl':'ltr';b.textContent=l==='he'?'FR':'עב';try{localStorage.setItem('sm-lang',l)}catch(e){}}
+  var s=null;try{s=localStorage.getItem('sm-lang')}catch(e){}
+  if(s==='fr')set('fr');
+  b.addEventListener('click',function(){set(h.lang==='he'?'fr':'he')});
+})();
+</script>
+</body>
+</html>
